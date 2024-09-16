@@ -62,6 +62,10 @@ I diagramed the following four tables:
 
 Your task: choose two tables and create a logical data model. There are lots of tools you can do this (including drawing this by hand), but I'd recommend [Draw.io](https://www.drawio.com/) or [LucidChart](https://www.lucidchart.com/pages/). 
 
+See my diagram below
+![image](https://github.com/user-attachments/assets/16a0bba1-cd07-48d1-9634-0fa6760d3ec8)
+
+
 A logical data model must contain:
 - table name
 - column names
