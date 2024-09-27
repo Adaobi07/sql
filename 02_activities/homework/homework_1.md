@@ -60,7 +60,12 @@ I diagramed the following four tables:
 ![01_farmers_market_logical_model_partial.png](./images/01_farmers_market_logical_model_partial.png)
 
 
-Your task: choose two tables and create a logical data model. There are lots of tools you can do this (including drawing this by hand), but I'd recommend [Draw.io](https://www.drawio.com/) or [LucidChart](https://www.lucidchart.com/pages/). 
+Your task: choose two tables and create a logical data model. There are lots of tools you can do this (including drawing this by hand), but I'd recommend [Draw.io](https://www.drawio.com/) or [LucidChart](https://www.lucidchart.c![image](https://github.com/user-attachments/assets/b5629b63-680d-445f-8462-835a38419dfc)
+om/pages/). 
+
+
+
+
 
 A logical data model must contain:
 - table name
