@@ -16,6 +16,15 @@ _Hint, search type 1 vs type 2 slowly changing dimensions._
 Bonus: Are there privacy implications to this, why or why not?
 ```
 Your answer...
+If the store is considering how to store customer addresses in a CUSTOMER_ADDRESS table I will propose these two Architectures:
+
+Retaining Address Changes:
+In this approach, the system retains a history of all addresses associated with a customer. A new record is created each time the address changes, and the old records are kept. This is called Slowly Changing Dimension Type 2 (SCD Type 2).
+Behavior: Each time a customer updates their address, a new record is inserted into the table, with a new start date and the old record marked as "inactive" by setting the end date and updating the is_current flag.
+
+Overwriting Address:
+In this approach, the address is simply overwritten each time a change occurs. The table would store only the latest address for each customer. This is called Slowly Changing Dimension Type 1 (SCD Type 1).
+Behavior: When the customer updates their address, the system overwrites the existing address information. There is no historical record of previous addresses.
 ```
 
 ## Question 4
@@ -24,6 +33,10 @@ Review the AdventureWorks Schema [here](https://imgur.com/a/u0m8fX6)
 Highlight at least two differences between it and your ERD. Would you change anything in yours?
 ```
 Your answer...
+
+In AdventureWorks Schema the level is Physical and technical database representation while in the ERD its Conceptual representation of data relationships
+In AdventureWorks Schema the format is SQL-based or detailed diagram with table definitions while the ERD is Abstract graphical diagram (rectangles, lines)
+In AdventureWorks Schema the purpose is Data types, constraints, indexes, primary/foreign keys while the ERD purpose is Entities, relationships, cardinality, attributes
 ```
 
 # Criteria
